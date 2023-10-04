@@ -1,7 +1,7 @@
 <h1 align="center"> LinkMe </h1>
 
 <p align="center">
-Site feito do zero com base nos conhecimentos e ideias obtidas no projeto <a href="https://github.com/MatVzn/DevLinks">DevLinks</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+Site feito do zero com base nos conhecimentos e ideias obtidas no projeto <a href="https://github.com/MatVzn/DevLinks">DevLinks</a>
 </p>
 
 <p align="center">
@@ -32,5 +32,3 @@ O LinkMee é um agregador de links para usar como cartão de visitas online. O g
 ---
 
 Feito por Matteo
-# LinkMee
-# LinkMee
