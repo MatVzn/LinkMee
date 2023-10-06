@@ -55,11 +55,13 @@ body {
   z-index: 1;
 
   font-weight: 600;
+
+  outline: 0px solid var(--button-highlight);
+  transition: outline .1s;
 }
 
 #themes button:hover {
   outline: 5px solid var(--button-highlight);
-  transition: outline .1s;
 }
 
 #themes .red {
@@ -131,11 +133,13 @@ ul li a {
   border: 2px solid var(--primary-color);
   border-radius: 20px;
   padding: 5px;
+
+  outline: 0px solid var(--button-highlight);
+  transition: outline .1s;
 }
 
 ul li a:hover {
   outline: 5px solid var(--button-highlight);
-  transition: outline .2s;
 }
 
 #social-links {
@@ -155,6 +159,7 @@ ul li a:hover {
 
   color: var(--primary-color);
 
+  background: transparent;
   transition: background .3s;
 }
 
