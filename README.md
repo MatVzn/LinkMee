@@ -26,9 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O LinkMee é um agregador de links para usar como cartão de visitas online. O grande diferencial dele para o DevLinks é a possibilidade de ver a página em várias cores diferentes, tendo como objetivo reforçar o conhecimento no uso de variáveis no CSS.
 
 - [Acesse o projeto finalizado, online](https://matvzn.github.io/LinkMee/)
-
 <br>
 
 ---
-
 Feito por Matteo
