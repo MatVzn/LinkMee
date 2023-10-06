@@ -12,6 +12,8 @@ body {
 #container {
   width: auto;
   padding: 40px 24px 0;
+  max-width: 500px;
+  margin: 0 auto 0;
 }
 
 #perfil {
@@ -28,26 +30,31 @@ body {
 }
 
 #perfil p {
-  margin: 10px 0 30px;
+  margin-top: 10px;
 }
 
 ul {
+  list-style: none;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 16px;
 
-  gap: 10px;
+  padding: 24px 0;
 }
 
-ul li {
-  list-style: none;
-  border: 2px solid #4b9cc2;
-  border-radius: 15px;
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  text-decoration: none;
+  color: #4b9cc2;
   font-weight: 600;
 
-  text-align: center;
-  padding: 3px 150px;
+  border: 2px solid #4b9cc2;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 #social-links {
