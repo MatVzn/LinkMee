@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,37 +17,49 @@
             <img src="assets/avatar.png" alt="avatar" id="avatar">
             <p>@MatVzn</p>
         </div>
+        <div id="themes">
+            <button class="red" onclick="redMode()">R</button>
+            <button class="green" onclick="greenMode()">G</button>
+            <button class="blue" onclick="blueMode()">B</button>
+        </div>
         <ul>
             <li>
-                <a href="">Link 1</a>
+                <a href="#">Link 1</a>
             </li>
             <li>
-                <a href="">Link 2</a>
+                <a href="#">Link 2</a>
             </li>
             <li>
-                <a href="">Link 3</a>
+                <a href="#">Link 3</a>
             </li>
             <li>
-                <a href="">Link 4</a>
+                <a href="#">Link 4</a>
             </li>
         </ul>
         <div id="social-links">
-            <a href="https://x.com/X" target="_blank">
-                <img src="assets/twitter.svg" alt="twitter">
-            </a>
-            <a href="https://twitch.tv/twitch" target="_blank">
-                <img src="assets/twitch.svg" alt="twitch">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="assets/instagram.svg" alt="instagram">
-            </a>
-            <a href="https://br.linkedin.com/" target="_blank">
-                <img src="assets/linkedin.svg" alt="linkedin">
-            </a>
             <a href="https://github.com/MatVzn" target="_blank">
-                <img src="assets/github.svg" alt="github">
-            </a> 
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+    
+            <a href="https://www.instagram.com/instagram/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+    
+            <a href="https://www.youtube.com/@YouTube" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+    
+            <a href="https://twitter.com/" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
         </div>
+        <footer>
+            Feito por <a href="https://github.com/MatVzn" target="_blank">Matteo</a>
+        </footer>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
