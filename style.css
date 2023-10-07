@@ -167,7 +167,7 @@ ul li a:hover {
 }
 
 #social-links .icon::after {
-  background-color: hsl(0, 0%, 73%, 0.50);
+  background-color: var(--button-highlight);
   border-radius: 50%;
   content: "";
   margin: 0 auto;
