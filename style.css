@@ -39,12 +39,12 @@ body {
   transition: background .5s;
 }
 
-#themes {
-  margin: 15px;
+.themes {
+  margin: 30px 20px;
   text-align: center;
 }
 
-#themes button{
+.themes button{
   width: 32px;
   height: 32px;
   border: 0;
@@ -60,40 +60,40 @@ body {
   transition: outline .1s;
 }
 
-#themes button:hover {
+.themes button:hover, .themes .active-button {
   outline: 5px solid var(--button-highlight);
 }
 
-#themes .red {
+.themes .red {
   border: 2px solid var(--primary-color);
   background-color: var(--second-color);
   color: var(--primary-color);
 }
 
-#themes .green {
+.themes .green {
   border: 2px solid var(--primary-color);
   background-color: var(--second-color);
   color: var(--primary-color);
 }
 
-#themes .blue {
+.themes .blue {
   border: 2px solid var(--primary-color);
   background-color: var(--second-color);
   color: var(--primary-color);
 }
 
-#container {
+.container {
   width: auto;
   padding: 40px 24px 0;
   max-width: 500px;
   margin: 0 auto 0;
 }
 
-#perfil {
+.perfil {
   text-align: center;
 }
 
-#perfil img {
+.perfil img {
   background-color: var(--primary-color);
   transition: background .3s;
 
@@ -105,7 +105,7 @@ body {
   border-radius: 50%;
 }
 
-#perfil p {
+.perfil p {
   margin-top: 10px;
 }
 
@@ -132,25 +132,27 @@ ul li a {
 
   border: 2px solid var(--primary-color);
   border-radius: 20px;
-  padding: 5px;
+  padding: 6px;
 
   outline: 0px solid var(--button-highlight);
-  transition: outline .1s;
+  transition: background .2s, outline .3s, transform .3s;
 }
 
 ul li a:hover {
-  outline: 5px solid var(--button-highlight);
+  background-color: var(--highlight);
+  outline: 3px solid var(--button-highlight);
+  transform: scale(1.06);
 }
 
-#social-links {
+.social-links {
   display: flex;
 
-  font-size: 24px;
+  font-size: 28px;
 
   justify-content: center;
 }
 
-#social-links a {
+.social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,19 +162,19 @@ ul li a:hover {
   color: var(--primary-color);
 }
 
-#social-links .icon {
+.social-links .icon {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
 }
 
-#social-links .icon::after {
+.social-links .icon::after {
   background-color: var(--button-highlight);
   border-radius: 50%;
   content: "";
   margin: 0 auto;
   transform: translateY(-50%);
-  transition: height 300ms, width 300ms;
+  transition: height .3s, width .3s;
 
   width: 0;
   height: 0;
@@ -184,7 +186,7 @@ ul li a:hover {
   top: 50%;
 }
 
-#social-links .icon:hover::after {
+.social-links .icon:hover::after {
   height: 50px;
   width: 50px;
 }
@@ -206,14 +208,14 @@ footer a:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 10%;
   height: 2px;
   background-color: var(--primary-color);
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity .3s, width .3s;
 }
 
 footer a:hover:after {
-  opacity: 1;   
-  transform: translate3d(0, 1px, 0);
+  opacity: 1;
+  width: 100%;  
 }

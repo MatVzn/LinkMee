@@ -12,52 +12,52 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="perfil">
-            <img src="assets/avatar.png" alt="avatar" id="avatar">
+    <div class="container">
+        <div class="perfil">
+            <img src="assets/avatar.png" alt="avatar">
             <p>@MatVzn</p>
         </div>
-        <div id="themes">
-            <button class="red" onclick="redMode()">R</button>
-            <button class="green" onclick="greenMode()">G</button>
-            <button class="blue" onclick="blueMode()">B</button>
+        <div class="themes">
+            <button class="red" id="red-button" onclick="changeTheme('red')">R</button>
+            <button class="green" id="green-button" onclick="changeTheme('green')">G</button>
+            <button class="blue" id="blue-button" onclick="changeTheme('blue')">B</button>
         </div>
         <ul>
             <li>
-                <a href="https://www.linkedin.com/in/matvzn/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/MatVzn" target="_blank">GitHub</a>
             </li>
             <li>
-                <a href="#">Link 2</a>
+                <a href="https://www.instagram.com/instagram/">Instagram</a>
             </li>
             <li>
-                <a href="#">Link 3</a>
+                <a href="https://www.x.com/x">X</a>
             </li>
             <li>
-                <a href="#">Link 4</a>
+                <a href="https://www.linkedin.com/in/matvzn/">LinkedIn</a>
             </li>
         </ul>
-        <div id="social-links">
+        <div class="social-links">
             <div class="icon">
                 <a href="https://github.com/MatVzn" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
+                    <img src="./assets/github.svg"> 
                 </a>
             </div>
             
             <div class="icon">
                 <a href="https://www.instagram.com/instagram/" target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
+                    <img src="./assets/instagram.svg"> 
                 </a>
             </div>
     
             <div class="icon">
-                <a href="https://www.youtube.com/youtube" target="_blank">
-                    <ion-icon name="logo-youtube"></ion-icon>
+                <a href="https://www.x.com/x" target="_blank">
+                    <img src="./assets/x.svg"> 
                 </a>
             </div>
     
             <div class="icon">
-                <a href="https://twitter.com/x" target="_blank">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                <a href="https://www.linkedin.com/in/matvzn/" target="_blank">
+                    <img src="./assets/linkedin.svg">
                 </a>
             </div>
         </div>
@@ -65,9 +65,7 @@
             Feito por <a href="https://github.com/MatVzn" target="_blank">Matteo</a>
         </footer>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+   
     <script src="./script.js"></script>
 </body>
 </html>
