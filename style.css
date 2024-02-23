@@ -57,10 +57,14 @@ body {
   font-weight: 600;
 
   outline: 0px solid var(--button-highlight);
-  transition: outline .1s;
+  transition: outline .1s, transform .1s;
 }
 
-.themes button:hover, .themes .active-button {
+.themes button:hover {
+  transform: scale(1.1);
+}
+
+.themes .active-button {
   outline: 5px solid var(--button-highlight);
 }
 
@@ -214,11 +218,11 @@ footer a:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 10%;
+  width: 1%;
   height: 2px;
   background-color: var(--primary-color);
   opacity: 0;
-  transition: opacity .3s, width .3s;
+  transition: opacity .5s, width .5s;
 }
 
 footer a:hover:after {
