@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: rgb(76, 76, 76);
-  --second-color: rgb(246, 246, 246);
+  --secondary-color: rgb(246, 246, 246);
   --highlight: rgb(76, 76, 76, 0.08);
   --button-highlight: rgb(76, 76, 76, 0.3);
   --highlight-border: rgb(76, 76, 76, 0.5);
@@ -14,27 +14,27 @@
 
 .red {
   --primary-color: rgb(206, 59, 59);
-  --second-color: rgb(241, 183, 183);
+  --secondary-color: rgb(241, 183, 183);
   --button-highlight: rgba(206, 59, 59, 0.3);
   --highlight: rgb(206, 59, 59, 0.08);
 }
 
 .green {
   --primary-color: rgb(92, 122, 59);
-  --second-color: rgb(205, 231, 178);
+  --secondary-color: rgb(205, 231, 178);
   --button-highlight: rgb(92, 122, 59, 0.3);
   --highlight: rgb(92, 122, 59, 0.08);
 }
 
 .blue {
   --primary-color: rgb(75, 156, 194);
-  --second-color: rgb(188, 228, 255);
+  --secondary-color: rgb(188, 228, 255);
   --button-highlight: rgb(75, 156, 194, 0.3);
   --highlight: rgb(75, 156, 194, 0.08);
 }
 
 body {
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   transition: background .5s;
 }
@@ -57,11 +57,12 @@ body {
   font-weight: 600;
 
   outline: 0px solid var(--button-highlight);
-  transition: outline .1s, transform .1s;
+  transition: color .3s, background-color .3s;
 }
 
 .themes button:hover {
-  transform: scale(1.1);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .themes .active-button {
@@ -70,19 +71,19 @@ body {
 
 .themes .red {
   border: 2px solid var(--primary-color);
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 .themes .green {
   border: 2px solid var(--primary-color);
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 .themes .blue {
   border: 2px solid var(--primary-color);
-  background-color: var(--second-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -139,11 +140,12 @@ ul li a {
   padding: 6px;
 
   outline: 0px solid var(--button-highlight);
-  transition: transform .3s;
+  transition: color .3s, background-color .3s;
 }
 
 ul li a:hover {
-  transform: scale(1.05);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .x-icon {
@@ -167,36 +169,12 @@ path, rect, circle, line {
   align-items: center;
   justify-content: center;
   padding: 13px;
-  border-radius: 50%;
+
+  transition: transform .3s;
 }
 
-.social-links .icon {
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-}
-
-.social-links .icon::after {
-  background-color: var(--button-highlight);
-  border-radius: 50%;
-  content: "";
-  margin: 0 auto;
-  transform: translateY(-50%);
-  transition: height .3s, width .3s;
-
-  width: 0;
-  height: 0;
-  
-  z-index: -1;
-
-  position: absolute;
-  inset: 0;
-  top: 50%;
-}
-
-.social-links .icon:hover::after {
-  height: 50px;
-  width: 50px;
+.social-links a:hover {
+  transform: translateY(-10px);
 }
 
 footer {
