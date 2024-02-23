@@ -144,6 +144,14 @@ ul li a:hover {
   transform: scale(1.06);
 }
 
+.x-icon {
+  fill: var(--primary-color);
+}
+
+path, rect, circle, line {
+  color: var(--primary-color)
+}
+
 .social-links {
   display: flex;
 
@@ -158,8 +166,6 @@ ul li a:hover {
   justify-content: center;
   padding: 13px;
   border-radius: 50%;
-
-  color: var(--primary-color);
 }
 
 .social-links .icon {
